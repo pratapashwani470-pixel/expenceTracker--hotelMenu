@@ -31,13 +31,19 @@ while True:
             print('no expenses has been added yet!')
         else:
             print('here is your all expense')
-            print(f'1.on date:-{date}\n2.you spend money for :-{category}\n3.more detail about your expense is :---{description}\n4.the total amount you spend :--{amount}')
+            for i,expense in enumerate (expenselist,start=1):
+                print(f"\nExpense {i}:")
+                print(f"1. Date: {expense['date']}")
+                print(f"2. Category: {expense['category']}")
+                print(f"3. Description: {expense['description']}")
+                print(f"4. Amount: {expense['amount']}")
+                
                 
     elif(choise == 3):
            total =0
            for expense in expenselist:
-               total = total+expense['amount']
-           print("total amount is :-",amount)
+               total += expense['amount']
+           print("total amount is :-",total)
            
     elif(choise == 4):
         print('thankyou')
