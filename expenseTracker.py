@@ -31,10 +31,6 @@ while True:
             print('no expenses has been added yet!')
         else:
             print('here is your all expense')
-            # count = 1
-            # for expense in expenselist:
-            #     print(f'expense no {count} {expense[date]}, {expense[category]}, {expense[description]}, {expense[amount]}') 
-            #     count = count+1
             print(f'1.on date:-{date}\n2.you spend money for :-{category}\n3.more detail about your expense is :---{description}\n4.the total amount you spend :--{amount}')
                 
     elif(choise == 3):
